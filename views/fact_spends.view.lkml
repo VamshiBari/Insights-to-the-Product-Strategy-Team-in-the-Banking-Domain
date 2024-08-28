@@ -46,7 +46,8 @@ view: fact_spends {
     sql: ${spend} ;;  }
   measure: average_spend {
     type: average
-    sql: ${spend} ;;  }
+    sql: ${spend} ;;
+    value_format: "$0.00" }
   measure: count {
     type: count
   }
