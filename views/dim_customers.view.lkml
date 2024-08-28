@@ -31,6 +31,10 @@ view: dim_customers {
    sql: ${avg_income} ;;
     value_format: "0.00"}
 
+  measure: avg_income2{
+    type: sum
+    sql: ${avg_income} ;;
+    value_format: "0.00"}
 
   dimension: city {
     type: string
