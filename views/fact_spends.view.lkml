@@ -46,6 +46,10 @@ view: fact_spends {
     type: average
     sql: ${spend} ;;
     }
+    measure: Avg_income_utilisation{
+      type: number
+      sql: ${average_spend}/ ${dim_customers.avg_income1} ;;
+    }
   measure: Total_spend {
     type: sum
     sql: ${spend} ;;

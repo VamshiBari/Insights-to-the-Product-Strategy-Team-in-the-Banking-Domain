@@ -36,6 +36,11 @@ view: dim_customers {
     type: string
     sql: ${TABLE}."CITY" ;;
   }
+  #dimension: city1 {
+   # type: location
+    #sql_latitude:${city1.latitude} ;;
+    #sql_longitude:${city1.longitude} ;;
+  #}
 
   dimension: customer_id {
     primary_key: yes
