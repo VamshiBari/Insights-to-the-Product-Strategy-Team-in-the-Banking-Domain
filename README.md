@@ -1,6 +1,7 @@
-Insights to the Product Strategy Team in the Banking Domain
+### Insights to the Product Strategy Team in the Banking Domain
 
-Domain:  Banking       Function: Strategy
+### Domain:  Banking       
+### Function: Strategy
 
 
 Mitron Bank is a legacy financial institution headquartered in Hyderabad. They want to introduce a new line of credit cards, aiming to broaden its product offerings and reach in the financial market.
