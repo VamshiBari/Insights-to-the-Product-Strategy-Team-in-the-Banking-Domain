@@ -33,7 +33,7 @@ view: dim_customers {
 
   measure: avg_income2{
     type: sum
-    sql: ${avg_income} ;;
+    sql: floor(${avg_income} / 1000000) ;;
     value_format: "0.00"}
 
   dimension: city {
