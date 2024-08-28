@@ -25,13 +25,7 @@ persist_with: mitron_bank_default_datagroup
 # Typically, join parameters require that you define the join type, join relationship, and a sql_on clause.
 # Each joined view also needs to define a primary key.
 
-explore: dim_customers {
-  join: fact_spends {
-     type: left_outer
-     relationship: one_to_one
-    sql_on: ${dim_customers.customer_id}=${fact_spends.customer_id} ;;
-  }
-}
+explore: dim_customers {}
 
 explore: fact_spends {
   join: dim_customers{
