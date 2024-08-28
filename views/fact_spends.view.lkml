@@ -37,19 +37,14 @@ view: fact_spends {
     sql: ${TABLE}."SPEND" ;;
   }
 
-  # A measure is a field that uses a SQL aggregate function. Here are defined sum and average
-  # measures for this dimension, but you can also add measures of many different aggregates.
-  # Click on the type parameter to see all the options in the Quick Help panel on the right.
+  #measure: total_spend {
+  #  type: sum
+   # sql: ${spend}/ 1000000 ;;
+    #}
 
-  measure: total_spend {
-    type: sum
-    sql: ${spend} ;;  }
   measure: average_spend {
     type: average
     sql: ${spend} ;;
+    }
 
-    value_format: "0.00"   }
-  measure: count {
-    type: count
-  }
 }

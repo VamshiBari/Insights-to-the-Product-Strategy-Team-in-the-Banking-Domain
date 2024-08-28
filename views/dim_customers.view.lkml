@@ -26,12 +26,11 @@ view: dim_customers {
   # measures for this dimension, but you can also add measures of many different aggregates.
   # Click on the type parameter to see all the options in the Quick Help panel on the right.
 
-  measure: total_avg_income {
-    type: sum
-    sql: ${avg_income} ;;  }
-  measure: average_avg_income {
-    type: average
-    sql: ${avg_income} ;;  }
+  measure: avg_income1{
+   type: average
+   sql: ${avg_income} ;;
+    value_format: "0.00"}
+
 
   dimension: city {
     type: string
@@ -58,7 +57,7 @@ view: dim_customers {
     type: string
     sql: ${TABLE}."OCCUPATION" ;;
   }
-  measure: count {
-    type: count
-  }
+  #measure: count {
+   # type: count
+  #}
 }
