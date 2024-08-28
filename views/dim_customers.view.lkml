@@ -19,6 +19,7 @@ view: dim_customers {
   dimension: avg_income {
     type: number
     sql: ${TABLE}."AVG_INCOME" ;;
+    value_format: "$0.00"
   }
 
   # A measure is a field that uses a SQL aggregate function. Here are defined sum and average
