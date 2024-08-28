@@ -27,8 +27,8 @@ persist_with: mitron_bank_default_datagroup
 
 explore: dim_customers {
   join: fact_spends {
-    type: left_outer
-    relationship: many_to_one
+     type: left_outer
+     relationship: one_to_one
     sql_on: ${dim_customers.customer_id}=${fact_spends.customer_id} ;;
   }
 }

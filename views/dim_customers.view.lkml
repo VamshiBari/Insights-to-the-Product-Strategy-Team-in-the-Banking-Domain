@@ -57,7 +57,7 @@ view: dim_customers {
     type: string
     sql: ${TABLE}."OCCUPATION" ;;
   }
-  #measure: count {
-   # type: count
-  #}
+  measure: count {
+    type: count
+  }
 }
