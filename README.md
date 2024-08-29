@@ -1,4 +1,4 @@
-### Insights to the Product Strategy Team in the Banking Domain
+### Insights to the Product Strategy Team in the Banking Domain using Looker 
 
 ### Domain:  Banking       
 ### Function: Strategy
