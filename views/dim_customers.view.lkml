@@ -19,7 +19,7 @@ view: dim_customers {
   dimension: avg_income {
     type: number
     sql: ${TABLE}."AVG_INCOME" ;;
-    value_format: "0.00"
+    value_format: "[>=1000000]$0.00,,\"M\";[>=1000]$0.00,\"K\";$0.00"
   }
 
   # A measure is a field that uses a SQL aggregate function. Here are defined sum and average
@@ -29,7 +29,7 @@ view: dim_customers {
   measure: avg_income1{
    type: average
    sql: ${avg_income} ;;
-    value_format: "0.00"}
+    value_format: "[>=1000000]$0.00,,\"M\";[>=1000]$0.00,\"K\";$0.00"}
 
   measure: avg_income2{
     type: sum
