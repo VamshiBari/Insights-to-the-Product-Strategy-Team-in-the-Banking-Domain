@@ -43,13 +43,13 @@ view: fact_spends {
     #}
 
   measure: average_spend {
-    type: average
+    type: sum
     sql: ${spend} ;;
     value_format:"[>=1000000]$0.00,,\"M\";[>=1000]$0.00,\"K\";$0.00"
     }
     measure: Avg_income_utilisation{
       type: number
-      sql: ${average_spend}/${dim_customers.avg_income1}*100 ;;
+      sql: ${average_spend}/${dim_customers.avg_income1} ;;
       value_format: "[>=1000000]$0.00,,\"M\";[>=1000]$0.00,\"K\";$0.00"
     }
   measure: Total_spend {
