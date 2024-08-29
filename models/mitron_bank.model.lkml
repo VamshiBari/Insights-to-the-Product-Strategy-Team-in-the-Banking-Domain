@@ -29,8 +29,8 @@ explore: dim_customers {}
 
 explore: fact_spends {
   join: dim_customers{
-  type: left_outer
-  relationship: one_to_one
-  sql_on: ${dim_customers.customer_id}=${fact_spends.customer_id} ;;
+    type: left_outer
+    sql_on: ${fact_spends.customer_id}=${dim_customers.customer_id};;
+    relationship: many_to_one
 }
 }
