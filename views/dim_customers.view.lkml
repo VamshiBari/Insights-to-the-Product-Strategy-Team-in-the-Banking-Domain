@@ -70,4 +70,10 @@ view: dim_customers {
   measure: count {
     type: count
   }
+
+  measure: bug_test {
+    type: count_distinct
+    sql: ${customer_id} ;;
+    allow_approximate_optimization: yes
+  }
 }
